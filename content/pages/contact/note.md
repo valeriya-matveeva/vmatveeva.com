@@ -1,6 +1,6 @@
 Subject: Contact
 
-Instagram: lera_owl_matveeva
+Instagram: lera\_owl\_matveeva
 
 Facebook: [Lera Matveeva](https://www.facebook.com/profile.php?id=100051489560028)
 
