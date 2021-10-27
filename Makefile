@@ -8,7 +8,7 @@ PROJECTS_DST := $(patsubst content/projects/%,$(ODIR)/projects/%/index.html,$(PR
 POSTS_SRC := $(wildcard content/posts/*)
 POSTS_DST := $(patsubst content/posts/%,$(ODIR)/posts/%/index.html,$(POSTS_SRC))
 
-all: $(PAGES_DST) $(PROJECTS_DST) $(POSTS_DST) $(ODIR)/style.css $(ODIR)/index.html $(ODIR)/posts/index.html $(ODIR)/rss.xml
+all: $(PAGES_DST) $(PROJECTS_DST) $(POSTS_DST) $(ODIR)/style.css $(ODIR)/favicon.ico $(ODIR)/index.html $(ODIR)/posts/index.html $(ODIR)/rss.xml
 
 $(ODIR)/%/index.html: content/pages/%/note.md
 	mkdir -p "$(dir $@)"
@@ -35,6 +35,8 @@ $(ODIR)/index.html: content/index.md
 $(ODIR)/style.css: style.css
 	cp style.css $(ODIR)/style.css
 
+$(ODIR)/favicon.ico: favicon.ico
+	cp favicon.ico $(ODIR)/favicon.ico
 
 clean:
 	rm -rf $(ODIR)/*

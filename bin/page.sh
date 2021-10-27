@@ -17,6 +17,8 @@ expand() {
     </title>
 	<link rel="alternate" type="application/rss+xml" 
 		title="RSS Feed for vmatveeva.com" href="/rss.xml" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> 
   </head>
   <body>
     <div id="header">
