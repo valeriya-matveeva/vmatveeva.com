@@ -1,4 +1,6 @@
-X-Date: 2022-03-06T12.00.00 Subject: Инструкция по публикации вещей на Decentraland X-Slug: happy
+X-Date: 2022-03-06T12.00.00
+Subject: Инструкция по публикации вещей на Decentraland
+X-Slug: decentraland
 
 **Внимание!!** Оригинальная статья [тут](https://docs.decentraland.org/decentraland/wearables-editor-user-guide/), перевод был выполнен 05.03.2022, перевод не является дословным, в нем присутствуют авторские изменения и дополнения.
 
