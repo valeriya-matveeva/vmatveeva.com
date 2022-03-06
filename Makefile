@@ -21,6 +21,8 @@ $(ODIR)/projects/%/index.html: content/projects/%/note.md
 $(ODIR)/posts/%/index.html: content/posts/%/note.md
 	mkdir -p "$(dir $@)"
 	cat "$<" | ./bin/mdpage.sh > "$@"
+	rsync -rupE --exclude="note.md" "$(dir $<)" "$(dir $@)"
+
 
 $(ODIR)/posts/index.html: $(POSTS_SRC)
 	mkdir -p "$(dir $@)"
