@@ -1,4 +1,6 @@
-X-Date: 2022-03-07T12.00.00 Subject: Публикация носимых устройств (Decentraland Forum) + критерии акцепта X-Slug: decentraland
+X-Date: 2022-03-07T12.00.00
+Subject: Публикация носимых устройств (Decentraland Forum) + критерии акцепта
+X-Slug: publishing_wearables
 
 Внимание!! Оригинальная статья [тут](https://docs.decentraland.org/decentraland/publishing-wearables/), перевод был выполнен 05.03.2022, перевод не является дословным, в нем присутствуют авторские изменения и дополнения.
 
