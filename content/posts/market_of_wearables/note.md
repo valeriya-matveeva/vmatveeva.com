@@ -1,4 +1,6 @@
-X-Date: 2022-03-13T12.00.00 Subject: Анализ рынка wearables для Decentraland (Decentraland market) X-Slug: create_things
+X-Date: 2022-03-13T12.00.00
+Subject: Анализ рынка wearables для Decentraland (Decentraland market)
+X-Slug: market_of_wearables
 
 Перед началом хочу уточнить курс Mana на момент 07.03.2022 по данным сайта [cryptorank](https://cryptorank.io/)  составляет 2,34$. Данное число я использую для дальнейших вычислений.
 

@@ -1,7 +1,8 @@
 #!/usr/bin/awk -f
+
 BEGIN {
 	body = ""
-	in_code = 0
+	first_paragraph = 1
 }
 
 function parse_header(str,    hnum, content) {
@@ -64,6 +65,11 @@ function rstrip(str) {
 
 function lstrip(str) {
 	gsub(/^ *\n*/, "", str);
+	return str;
+}
+
+function strip(str) {
+	gsub(/^ *\n*| *\n*$/, "", str);
 	return str;
 }
 
@@ -417,10 +423,74 @@ function parse_code(str,    i, lines, result) {
 	return "";
 }
 
+function is_metadata(str,    i, lines, line) {
+	split(str, lines, "\n");
+	for (i=1; i<=length(lines); i++) {
+		line = lines[i];
+
+		if (! match(line, /^[^ ]+: .+$/))
+			return 0;
+	}
+	return 1;
+}
+
+function col_count(str,    i, count) {
+	count = 0;
+	for (i=1; i<=length(str); i++) {
+		if (substr(str, i, 1) == "|")
+			count++;
+	}
+	return count-1;
+
+}
+function is_table(str,    i, lines, line) {
+	split(str, lines, "\n");
+	num_cols = col_count(lines[1]);
+	if (!match(lines[2], /^([[:space:]]*\|[[:space:]]*-{3,}[[:space:]])*\|[[:space:]]*/)) {
+		return 0;
+	}
+
+	for (i=2; i<=length(lines); i++) {
+		line = lines[i];
+
+	    if (col_count(line) != num_cols)
+			return 0;
+	}
+
+	return 1;
+}
+
+function parse_table(str, num_cols, lines, line, cols, i, j) {
+	split(str, lines, "\n");
+	num_cols = col_count(lines[1]);
+
+	split(lines[1], cols, "|");
+	res="<table>\n<tr>\n";
+	for (i=2; i<=num_cols+1; i++) {
+		res = res "<th>"strip(cols[i])"</th>\n";
+    }
+	res = res "</tr>\n"
+
+	for (i=3; i<=length(lines); i++) {
+		line = lines[i];
+	    split(line, cols, "|");
+	    res=res "<tr>\n";
+	    for (j=2; j<=num_cols+1; j++) {
+		    res = res "<td>"strip(cols[j])"</td>\n";
+        }
+	    res=res"</tr>\n";
+	}
+	res=res "</table>"
+	return res;
+}
+
 function parse_block(str) {
 	if (str == "")
 		return "";
 
+	if (match(str, /^[[:space:]]*\|.*/) && is_table(str)) {
+        return parse_table(str);
+	}
 	if (match(str, /^```\n.*```$/) || match(str, /^    /)) {
 		return parse_code(str);
 	}
@@ -497,8 +567,11 @@ function line_continues(body, line) {
 		next;
 	}
 
-	if (body != "") 
-		print parse_block(body);
+	if (body != "") {
+		if (!(first_paragraph && is_metadata(body)))
+			print parse_block(body);
+		first_paragraph = 0;
+	}
 
 	body = $0;
 
@@ -506,6 +579,8 @@ function line_continues(body, line) {
 }
 
 END {
-	if (body != "")
-		print parse_block(body);
+	if (body != "") {
+		if (!(first_paragraph && is_metadata(body)))
+			print parse_block(body);
+	}
 }
