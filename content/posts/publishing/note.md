@@ -1,4 +1,6 @@
-X-Date: 2022-06-12T12.00.00 Subject: How to check wearables in Decentraland before publishing? X-Slug: create_things
+X-Date: 2022-06-12T12.00.00
+ Subject: How to check wearables in Decentraland before publishing?
+ X-Slug: publishing
 
 Maybe you think it is easy, but I didn't find it fast. It is very important step before a publish. It helps to check wrongs and get approval in future.
 
