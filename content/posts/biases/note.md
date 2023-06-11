@@ -2,7 +2,7 @@ X-Date: 2023-06-11T12.00.00
 Subject: Cognitive biases | Attentional Bias, Affect Heuristic, and Focusing Effect | Application in marketing
 X-Slug: biases
 
-In our previous video (https://youtu.be/L9nGqj0csCU), we discussed the Availability Heuristic and how our consciousness's reliance on external information can hinder accurate statistical predictions. Today, we delve into the fascinating world of attention-related biases.
+In our previous video ([https://youtu.be/L9nGqj0csCU](https://youtu.be/L9nGqj0csCU)), we discussed the Availability Heuristic and how our consciousness's reliance on external information can hinder accurate statistical predictions. Today, we delve into the fascinating world of attention-related biases.
 
 Hello, I'm Lera, and in this article, we will explore Attentional Bias, Affect Heuristic, and the Focusing Effect. We will understand the significance of these biases and how they can be applied in practical situations.
 
