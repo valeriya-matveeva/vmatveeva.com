@@ -1,3 +1,6 @@
+ifeq ($(PREFIX),)
+	PREFIX := /usr/local
+endif
 ODIR=output
 PAGES_SRC := $(wildcard content/pages/*)
 PAGES_DST := $(patsubst content/pages/%,$(ODIR)/%/index.html,$(PAGES_SRC))
@@ -43,8 +46,6 @@ $(ODIR)/favicon.ico: favicon.ico
 clean:
 	rm -rf $(ODIR)/*
 
-deploy:
-	rsync -avP --delete output/ root@knazarov.com:/var/www/vmatveeva.com/
-
-analytics:
-	ssh root@knazarov.com "cat /var/log/nginx/access.log" | ./bin/analytics.sh	
+install:
+	install -d $(DESTDIR)$(PREFIX)/srv/vmatveeva.com
+	rsync -av --no-o --no-g output/ $(DESTDIR)$(PREFIX)/srv/vmatveeva.com
