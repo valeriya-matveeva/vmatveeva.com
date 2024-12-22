@@ -30,4 +30,4 @@ The final stop is 27 St Luke’s Mews. If you still have energy, you can walk th
 ![IMG_4813](https://github.com/user-attachments/assets/a7b60cf5-1491-4b23-99dc-74afddcd1228)
 ![image](https://github.com/user-attachments/assets/75202705-4554-4301-96f1-2e06d0728987)
 
-**To make it easier to follow the route, I’ve marked the stops on Google Maps:** https://maps.app.goo.gl/1LCDuffXgcJFcaaH6
+**To make it easier to follow the route, I’ve marked the stops on Google Maps:** <https://maps.app.goo.gl/1LCDuffXgcJFcaaH6>
