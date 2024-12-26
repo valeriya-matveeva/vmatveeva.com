@@ -1,4 +1,6 @@
-X-Date: 2024-12-26T12.00.00 Subject: Walking Tour of Rick Buckley’s Noses in London X-Slug: rick_buckley_noses
+X-Date: 2024-12-26T12.00.00
+Subject: Walking Tour of Rick Buckley’s Noses in London
+X-Slug: rick_buckley_noses
 
 **Route map at the end of the article!**
 
