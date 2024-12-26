@@ -1,4 +1,6 @@
-X-Date: 2024-12-26T12.00.00 Subject: A Walking Tour of Harry Potter Locations in London X-Slug: harry_potter_locations
+X-Date: 2024-12-26T12.00.00
+Subject: A Walking Tour of Harry Potter Locations in London
+X-Slug: harry_potter_locations
 
 **Route map at the end of the article!**
 
