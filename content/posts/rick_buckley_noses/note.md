@@ -1,6 +1,6 @@
 X-Date: 2024-12-26T12.00.00 Subject: Walking Tour of Rick Buckley’s Noses in London X-Slug: love_actually_route
 
-Route map at the end of the article!
+**Route map at the end of the article!**
 
 Rick Buckley was born in 1962 in Essex, United Kingdom. He studied at the Düsseldorf Art Academy in Germany. Buckley is best known for his protest against the installation of surveillance cameras. As part of this protest, he placed small sculptures of noses on the streets of London.
 
