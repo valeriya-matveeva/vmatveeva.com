@@ -1,7 +1,5 @@
 Subject: Contact
 
-Instagram: lera\_owl\_matveeva
-
-Facebook: [Lera Matveeva](https://www.facebook.com/profile.php?id=100051489560028)
+Instagram: [valrie\_matveeva](https://www.instagram.com/valerie_matveeva/)
 
 Telegram: @Lera_L
