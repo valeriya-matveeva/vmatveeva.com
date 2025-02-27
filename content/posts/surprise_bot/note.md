@@ -10,13 +10,13 @@ To get an idea of how it works, you can check out a video in my reels, for examp
 
 Here's how the quest is organized:
 
-1. You've decided to surprise your boyfriend or girlfriend and ask them to find a QR code that you've hidden somewhere.
+ - You've decided to surprise your boyfriend or girlfriend and ask them to find a QR code that you've hidden somewhere.
 
 ![image](https://github.com/user-attachments/assets/2d786b65-edfd-4bac-ad20-9f8d372247df)
 
-2. Once they find the QR code and open the bot, they'll receive their first task: to head to Canary Wharf and find "Big Boy." However, the message will hint that there's a missing letter in the word "Boy." The correct answer is "Big Buoy," which they’ll need to locate on Google Maps (https://maps.app.goo.gl/riHpFuoxJHg9uWSP9) and walk to.
+ - Once they find the QR code and open the bot, they'll receive their first task: to head to Canary Wharf and find "Big Boy." However, the message will hint that there's a missing letter in the word "Boy." The correct answer is "Big Buoy," which they’ll need to locate on Google Maps (https://maps.app.goo.gl/riHpFuoxJHg9uWSP9) and walk to.
 
-3. When your partner reaches Big Buoy, they'll need to send their location. If it's correct (meaning they are indeed near Big Buoy), they'll receive a message instructing them to look across the river—there, they'll see their final destination: FairGame!
+ - When your partner reaches Big Buoy, they'll need to send their location. If it's correct (meaning they are indeed near Big Buoy), they'll receive a message instructing them to look across the river—there, they'll see their final destination: FairGame!
 
 
 
